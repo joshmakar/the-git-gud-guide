@@ -155,6 +155,7 @@ This will create and switch to the named branch.
 
 `$ git checkout <branch_name>`
 
+**Example**
 `$ git checkout master`
 
 ### Merging branches
@@ -177,12 +178,16 @@ This will delete the named branch.
 ### Change author name and email
 
 `$ git config --global user.name "John Doe"`
+
 `$ git config --global user.email "john@doe.org"`
 
 This will change your user name and email address globally.
 
-`$ git config user.name "John Doe"`
-`$ git config user.email "john@doe.org"`
+**Example**
+```
+$ git config user.name "John Doe"
+$ git config user.email "john@doe.org"
+```
 
 This will change your user name and email only for the repository/directory you're working in.
 
@@ -190,6 +195,7 @@ This will change your user name and email only for the repository/directory you'
 # Github Basics
 
 `$ git push <remote_name> :<branch_name>`
+
 `$ git push origin :feature-branch`
 
 This will push your changes to your Github remote repository and delete the named branch.
