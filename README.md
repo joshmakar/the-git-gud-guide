@@ -200,6 +200,10 @@ This will change your user name and email only for the repository/directory you'
 
 # Github Basics
 
+`$ git push origin master`
+
+This will push your changes to the origin repository and master branch.
+
 `$ git push <remote_name> :<branch_name>`
 
 `$ git push origin :feature-branch`
