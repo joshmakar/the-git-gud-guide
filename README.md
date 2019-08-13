@@ -172,6 +172,12 @@ This will merge the named branch into the branch currently checked out and creat
 
 This will delete the named branch.
 
+### Remote branches
+
+`$ git remote -v`
+
+This will list remote branches.
+
 
 ## Misc
 
