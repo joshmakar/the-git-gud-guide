@@ -75,8 +75,7 @@ This will display a log of commits made.
 
 `$ git add <file_or_folder_name>`
 
-**Example**
-
+**Example**  
 `$ git add app.js`
 
 This will tell git to stage the file or folder specified.
@@ -84,19 +83,25 @@ This will tell git to stage the file or folder specified.
 
 ### Multiple files
 
-`$ git add -A` Stages **all changes including hidden files**
-`$ git add .` Stages new files and modifications, **without deletions**
-`$ git add -u` Stages modifications and deletions, **without new files**
+`$ git add .`
 
-This will tell git to stage all files and folders.
+Stages new files and modifications, **without deletions**  
+You'll use this one the most.
+
+`$ git add -A`
+
+Stages **all changes including hidden files**
+
+`$ git add -u`
+
+Stages modifications and deletions, **without new files**
 
 
 ### Wildcards
 
 `$ git add *.<ext>`
 
-**Example**
-
+**Example**  
 `$ git add *.html`
 
 This will add every file with the .html extension.
@@ -105,6 +110,11 @@ This will add every file with the .html extension.
 ## Removing files and directories from the staging area
 
 `$ git reset HEAD <file_or_folder>`
+
+**Example**  
+`$ git reset HEAD app.js`
+
+This is basically the opposite of `git add`.
 
 
 ## Ignoring files and folders
@@ -122,28 +132,29 @@ node_modules
 ```
 
 
-## Commiting
+## Commits and Commiting
 
 `$ git commit -m "A useful message."`
 
 This will commit and create a message for the files added to the staging area.
 
 
-## Checking Out
+### Checking out
 
 Checking out can loosely be thought of as, "I'm checking out/viewing the state of my project on this particular branch, or at this particular time."
 
 
-### Previous commits
+#### Previous commits
 
 `$ git checkout <commit_hash>`
 
-**Example**
+**Example**  
 `$ git checkout c7a2a019170031f89dadad42f49a2c38265756ac`
 
 This will checkout the commit with the matching hashtag.
 
-### Master
+
+#### Master
 
 Master is the central or main state of your application. After checking out a previous commit, you will likely want to switch back to the master to continue working.
 
@@ -158,7 +169,7 @@ Find the hashtag that corrisponds to where you want to revert back to.
 
 `$ git revert --no-commit <short_or_full_commit_hash>`
 
-**Example**
+**Example**  
 `got revert --no-commit c7a2a01..HEAD`
 
 This will revert you back to the selected commit. You'll want to perform a new commit with a message such as "Revert back to c7a2a01".
@@ -168,7 +179,9 @@ This will revert you back to the selected commit. You'll want to perform a new c
 
 Branches are versions of code split off from the master branch, best used when testing features and development. Once changes are finalized, you can then merge the finished branch into the master branch.
 
-`$ git branch` List all branches
+`$ git branch`
+
+Lists all branches
 
 
 ### Create a new branch
@@ -182,9 +195,8 @@ This will create and switch to the named branch.
 
 `$ git checkout <branch_name>`
 
-**Example**
-
-`$ git checkout master`
+**Example**  
+`$ git checkout feature-fix`
 
 
 ### Merging branches
@@ -214,13 +226,14 @@ This will list remote branches.
 
 ### Change author name and email
 
-`$ git config --global user.name "John Doe"`
-
-`$ git config --global user.email "john@doe.org"`
+```
+$ git config --global user.name "John Doe"
+$ git config --global user.email "john@doe.org"
+```
 
 This will change your user name and email address globally.
 
-**Example**
+
 ```
 $ git config user.name "John Doe"
 $ git config user.email "john@doe.org"
