@@ -26,14 +26,13 @@ You can use Git alone for local version control. GitHub is primarily used for ba
 
 ## Terminology 
 
-**Working Directory**
+**Working Directory**  
 This is where all of your files and directories that you're working on live. An example of this may be `Desktop/my-app/`.
 
-**Staging Area**
-
+**Staging Area**  
 This is where you add files with `$ git add` that are ready to be commited to the Git repository.
 
-**Repository**
+**Repository**  
 This is where all your snapshots/files are stored after you've commited them with `$ git commit`.
 
 
