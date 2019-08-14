@@ -1,22 +1,41 @@
 # The Git Gud Guide
 
-For referencing the most used git commands and terminology.
+For referencing the most used git commands, terminology, and workflows.
+
+
+## Preface
+
+This guide is a work in progress and some of the content may be inaccurate.
+
+If you find any issues or would like to contribue, please feel free to create a pull request.
+
 
 ## Why I wrote this guide
 
 This guide was written as a place to hold useful git commands in a centralized location to easily be referenced.
 
 
+# Git and GitHub are not the same
+
+Git is a revision control system, a tool to manage your source code history. GitHub is a hosting service for Git repositories.
+
+You can use Git alone for local version control. GitHub is primarily used for backup and collaboration.
+
+
 # The Git Basics
 
+## Terminology 
+
 **Working Directory**
-This is where all of your files and directories that you're working on live.
+This is where all of your files and directories that you're working on live. An example of this may be `Desktop/my-app/`.
 
 **Staging Area**
+
 This is where you add files with `$ git add` that are ready to be commited to the Git repository.
 
 **Repository**
 This is where all your snapshots/files are stored after you've commited them with `$ git commit`.
+
 
 ## Basic Workflow
 
@@ -29,17 +48,20 @@ This is where all your snapshots/files are stored after you've commited them wit
 7. Remove merged branch `$ git branch -d <branch_name>`.
 8. Repeat.
 
+
 ## Git Initialization
 
 `$ git init`
 
 This will initialize git in the current directory and create a hidden folder called *.git*.
 
+
 ## Git Status
 
 `$ git status`
 
 This will display the git status. You'll use this a lot.
+
 
 ## Git Log
 
@@ -60,6 +82,7 @@ This will display a log of commits made.
 
 This will tell git to stage the file or folder specified.
 
+
 ### Multiple files
 
 `$ git add -A` Stages **all changes including hidden files**
@@ -67,6 +90,7 @@ This will tell git to stage the file or folder specified.
 `$ git add -u` Stages modifications and deletions, **without new files**
 
 This will tell git to stage all files and folders.
+
 
 ### Wildcards
 
@@ -108,7 +132,8 @@ This will commit and create a message for the files added to the staging area.
 
 ## Checking Out
 
-Checking out can loosely be thought of as, "I'm checking out/viewing the state of my project at this particular time."
+Checking out can loosely be thought of as, "I'm checking out/viewing the state of my project on this particular branch, or at this particular time."
+
 
 ### Previous commits
 
@@ -124,6 +149,7 @@ This will checkout the commit with the matching hashtag.
 Master is the central or main state of your application. After checking out a previous commit, you will likely want to switch back to the master to continue working.
 
 `$ git checkout master`
+
 
 ### Reverting to previous commits
 
@@ -145,18 +171,22 @@ Branches are versions of code split off from the master branch, best used when t
 
 `$ git branch` List all branches
 
+
 ### Create a new branch
 
 `$ git checkout -b <branch_name>`
 
 This will create and switch to the named branch.
 
+
 ### Switching between branches
 
 `$ git checkout <branch_name>`
 
 **Example**
+
 `$ git checkout master`
+
 
 ### Merging branches
 
@@ -166,11 +196,13 @@ First checkout the branch you want to merge in to, typcially this would be *mast
 
 This will merge the named branch into the branch currently checked out and create a new commit.
 
+
 ### Removing branches
 
 `$ git branch -d <branch_name>`
 
 This will delete the named branch.
+
 
 ### Remote branches
 
@@ -206,6 +238,7 @@ This will push your changes to the origin repository and master branch.
 
 `$ git push <remote_name> :<branch_name>`
 
+**Example**
 `$ git push origin :feature-branch`
 
-This will push your changes to your Github remote repository and delete the named branch.
+This will push your changes to your Github remote repository and delete the named remote branch.
