@@ -121,9 +121,9 @@ This is basically the opposite of `git add`.
 
 If you've begun making changes with the wrong branch checked out, you can stash your changes, then checkout the correct branch, and finally apply the stashed changes.
 
-`$ git stash`
-`$ git checkout correct-branch`
-`$ git stash apply`
+`$ git stash`  
+`$ git checkout correct-branch`  
+`$ git stash apply`  
 
 
 ## Ignoring files and folders
