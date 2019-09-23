@@ -117,6 +117,15 @@ This will add every file with the .html extension.
 This is basically the opposite of `git add`.
 
 
+## Stashing changes in order to switch to the correct branch without modifying the current branch
+
+If you've begun making changes with the wrong branch checked out, you can stash your changes, then checkout the correct branch, and finally apply the stashed changes.
+
+`$ git stash`
+`$ git checkout correct-branch`
+`$ git stash apply`
+
+
 ## Ignoring files and folders
 
 Create a file in the root directory called *.gitignore*.
