@@ -179,7 +179,7 @@ Find the hashtag that corrisponds to where you want to revert back to.
 `$ git revert --no-commit <short_or_full_commit_hash>`
 
 **Example**  
-`got revert --no-commit c7a2a01..HEAD`
+`$ git revert --no-commit c7a2a01..HEAD`
 
 This will revert you back to the selected commit. You'll want to perform a new commit with a message such as "Revert back to c7a2a01".
 
