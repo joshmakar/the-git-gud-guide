@@ -267,4 +267,4 @@ This will push your changes to the origin repository and master branch.
 **Example**  
 `$ git push -d origin feature-branch`
 
-This will push your changes to your Github remote repository and delete the named remote branch. [Delete a local branch] (###-removing-branches)
+This will push your changes to your Github remote repository and delete the named remote branch. [Delete a local branch] (#-removing-branches)
