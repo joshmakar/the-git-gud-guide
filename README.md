@@ -253,13 +253,18 @@ This will change your user name and email only for the repository/directory you'
 
 # Github Basics
 
+## Push to Github
+
+`$ git push <remote_name> <branch_name>`
+
+**Example**  
 `$ git push origin master`
 
 This will push your changes to the origin repository and master branch.
 
-`$ git push <remote_name> :<branch_name>`
+`$ git push -d <remote_name> <branch_name>`
 
-**Example**
-`$ git push origin :feature-branch`
+**Example**  
+`$ git push -d origin feature-branch`
 
-This will push your changes to your Github remote repository and delete the named remote branch.
+This will push your changes to your Github remote repository and delete the named remote branch. [Delete a local branch] (###-removing-branches)
