@@ -259,6 +259,10 @@ This will change your user name and email only for the repository/directory you'
 
 This will perform a basic push to the remote repository. If you're in a new local branch, follow the instructions output after performing a git push with the new branch checked out.
 
+## Get updated list of remote branches
+
+`$ git fetch origin`
+
 ## Delete a remote branch
 
 `$ git push -d <remote_name> <branch_name>`
