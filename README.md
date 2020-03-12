@@ -250,6 +250,14 @@ $ git config user.email "john@doe.org"
 
 This will change your user name and email only for the repository/directory you're working in.
 
+### Check for package updates
+
+```
+npm outdated
+```
+
+This will display a list of packages that are outdated. Packages in *red* means there's a newer version matching your requirements. Packages in *yellow* indicates that there's a newer version above your requirements, so proceed with caution.
+
 
 # Github Basics
 
